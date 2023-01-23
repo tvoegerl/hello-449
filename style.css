@@ -1,16 +1,25 @@
 :root {
     --grey: #e9eaec;
+    --dark-grey: #424242;
+
 }
 
 body {
-    /**font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;**/
-    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75em;
 }
 
 header {
     width: 75%;
-    height: 100px;
-    overflow: hidden;
+}
+
+header h1 {
+    padding-left: 50px;
+    color: var(--dark-grey);
+    font-size: 50px;
 }
 
 section {
@@ -19,32 +28,61 @@ section {
 }
 
 img {
-    width: 100%;
+    width: 95.5%;
     border-radius: 15px;
     height: 40%;
 }
 
-h1 {
-    font-size: xx-large;
+#header-logo {
+    width: 40px;
+    border-radius: 0px;
+    float: left;
+    margin-top: 10px;
 }
 
 h2 {
-    margin: 0;
+    margin: 15px;
     font-weight: 100;
-    font-size: large;
+    font-size: 35px;
+    font-weight: bold;
 }
 
 p {
-    margin: 0;
+    margin: 15px;
+    margin-top: 0px;
     margin-bottom: 10px;
     padding: 0;
-    font-size: medium;
+    font-size: 18px;
 }
 
 .subsection {
     border-radius: 15px;
-    margin: 20px auto;
+    margin: 20px 0;
     width: 400px;
     padding: 20px;
+    float: left;
 }
 
+#example {
+    margin-left: 20px;
+    padding: 0;
+}
+
+#example h2 {
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+#example p {
+    padding: 0 20px;
+}
+
+pre {
+    background-color: var(--dark-grey);
+    color: var(--grey);
+    margin-bottom: 0;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
